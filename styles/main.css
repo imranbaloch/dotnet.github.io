@@ -244,6 +244,21 @@ footer > .inner-footer a:hover {
     background-color: #EDEDED;
 }
 
+/* Porting page styles */
+.api-search-box {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.api-search-box > label {
+    position: absolute;
+    top: 5;
+    left: 15;
+}
+.porting-search {
+    padding: 25px;
+    border-radius: 15px;
+}
+
 @media (max-device-width: 480px) and (orientation: portrait), (max-device-width: 700px) and (orientation: landscape){
   /* Index page overrides */
   .btn-hero-core {
