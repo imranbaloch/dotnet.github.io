@@ -17,8 +17,10 @@
         <div class="step-number">2</div>
           <h3>Use the official PKG</h3>
           <p>The best way to install .NET Core on OS X is to use the <a href="https://dotnetcli.blob.core.windows.net/dotnet/beta/Installers/1.0.0.001598/dotnet-osx-x64.1.0.0.001598.pkg">official PKG package</a>. This installer will install the tools and put them on your PATH.</p>
-          <p><strong>Note:</strong> please uninstall the previous version of .NET Core before installing this one, as the RC2 has brought on some 
-            important changes.</p>
+          <p><strong>Note:</strong> If you are running version <strong>001598</strong> that you recieved from this site, 
+          please uninstall that version first and then install the RC2 version. To uninstall, remove the 
+          <code>/usr/local/share/dotnet</code> directory and <code>/etc/paths.d/dotnet</code> file. After this, issue the 
+          following command: <code>pkgutil --packages | grep dotnet | xargs pkgutil --forget</code> to "forget" the package.</p>
     </div>
     <div class="step step-none macosx-trail" id="step-3">
       <div class="step-number">3</div>
